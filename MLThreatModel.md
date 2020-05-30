@@ -82,7 +82,8 @@ There are five assets to protect.
 |A03| Docker Image |At rest in ECR|
 |A04| Notebook instance |EBS volume attached to EC2 instance|
 |A05| Python program  |PY file created by a Data Scientist goes a code repository, it has been excluded from the model|
-||||
+
+
 Threat Table (STRIDE)
 
 1. Training data and model (A01, A02)  Located in S3 bucket 
@@ -113,7 +114,7 @@ Threat Table (STRIDE)
 |C08 |Mutual TLS |Inter-container communication|
 |C09 |AWS Config |To ensure that the planned configuration is applied properly|
 |C10 |AWS Account |Isolated account to ensure no interference from other accounts|
-||||
+
 
 ## Security Considerations 
 1. Accounts (C10) - SageMaker should be run on its own account. 
